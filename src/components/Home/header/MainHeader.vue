@@ -4,7 +4,7 @@
               <label class="searchSymbole" for="searchSymbole">🔍</label>
               <input class="inputArea" type="text" id="searchinput" placeholder="where to?">
           </form>
-      <h1 class="title">Ouarzazate</h1>
+      <h1 class="title">Ouarzazate Tour</h1>
       <router-link :to="{ name: 'bookingLink'}"><button class="book">Book Now!</button></router-link>
     </header>
 
@@ -33,29 +33,56 @@ Header{
 .title{
   font-family: 'booterfont';
   color: white;
-  font-size: 8em;
+  font-size: 5em;
   text-align: center;
   font-weight: normal;
 }
+@media all and (max-width: 350px) {
+  .title{
+  font-size: 2em;
+}
+.inputArea{
+width: 5em;
+}
+}
 .book{
   border-style: ridge;
-  margin:5px 1px 20px 20% ;
+  margin:0em 1px 20px 20% ;
   width: 10em;
   max-height: 3em;
   border-radius: 5px;
-  animation: movementTitle 5s infinite ;
+  animation: movementTitle 8s infinite ;
 }
 @keyframes movementTitle{
   from {
-    transform: translateX(1em);
+    transform: translateY(10em);
   }
   to {
-    transform: translateX(5);
+    transform: translateX(10em);
+    color: white;
+    background-color: rgb(17, 16, 16);
+    border: none;
   }
+}
+@media all and (max-width: 350px) {
+  .book{
+  width: 8em;
+  font-size: 6px;
+}
+  @keyframes movementTitle{
+  from {
+    transform: translateY(20em);
+  }
+  to {
+    transform: translateY(10em);
+    color: white;
+    background-color: rgb(17, 16, 16);
+    border: none;
+  }
+}
 }
 .book:hover{
   background-color: aquamarine;
-  transform: skewX(20deg);
 }
 </style>
 <script>
