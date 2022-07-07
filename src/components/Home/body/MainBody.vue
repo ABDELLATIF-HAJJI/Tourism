@@ -137,10 +137,10 @@ export default {
   }
   @media all and (max-width: 350px) {
     .firstSectionImg{
-    width: 7em;
-    height: 4em;
-    border-radius: 5px;
-  }
+      width: 7em;
+      height: 4em;
+      border-radius: 5px;
+    }
   }
   .secondSection{
     max-width: 100%;
@@ -257,7 +257,6 @@ export default {
       font-size: 12px;
       width: 9em;
     }
-    
   }
 </style>
   

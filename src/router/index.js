@@ -9,8 +9,8 @@ const routes = [
     redirect: "/home"
   },
   {
-    path: '/signUp',
-    name: 'signUp',
+    path: '/sign',
+    name: 'sign',
     component: () => import('../components/Log_in/Sign_up/SignUpPage.vue')
   },
   {
@@ -20,7 +20,7 @@ const routes = [
   },
   {
     path: '/trips',
-    name: 'tripsTour',
+    name: 'trips',
     component: () => import('../components/Trips/TripsPage.vue')
   },
   {
@@ -29,8 +29,8 @@ const routes = [
     component: () => import('../components/About_us/AboutUsPage.vue')
   },
   {
-    path: '/Login',
-    name: 'logIn',
+    path: '/login',
+    name: 'login',
     component: () => import('../components/Log_in/logInPage.vue')
   },
   {

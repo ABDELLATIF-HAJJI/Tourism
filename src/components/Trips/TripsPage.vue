@@ -28,7 +28,7 @@
             <p class="tripprice">{{trip.TripPrice}}€</p>
         </div>
     </div>
-        <div class="hotelcontainer" v-for="(hotel, index) in hotels" :key="index">
+    <div class="hotelcontainer" v-for="(hotel, index) in hotels" :key="index">
         <img class="hotelImg" :src="hotel.hotelImg" alt="hotel">
         <div class="ContainerDetails">
             <p class="hotelname">{{hotel.HotelName}}</p>
@@ -49,7 +49,7 @@ export default {
         trips:[
             {
               TripImg: require('@/assets/img/ThirdSectionImg/fez1.jpg'),
-              TripName:'visite studio of Ouarzazate',
+              TripName:'visit studio of Ouarzazate',
               TripDuration:'3 days',
               TripPrice: 100,
             },
@@ -73,6 +73,11 @@ export default {
             }
         ]
         }
+    },
+    methods: {
+        filterHotels() {
+            return this.trips = this.checked
+        },
     },
 }
 </script>
