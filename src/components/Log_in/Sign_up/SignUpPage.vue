@@ -14,7 +14,7 @@
       <label for="remember"> Remember me</label><br>
       <button class="bt logIn">Sign up</button>
       <p>you already have an account!</p>
-      <router-link :to="{ name: 'logIn' }"><button class="bt signUp">Log in</button>
+      <router-link :to="{ name: 'login' }"><button class="bt signUp">Log in</button>
 </router-link>
       
     </form>
@@ -28,35 +28,53 @@ export default {
 </script>
 
 <style scoped>
-.main-container{
-  margin: auto;
-  margin-top: 30px;
-  width: 50%;
-  padding: 10px;
-  border: solid 2px rgb(182, 201, 182);
-  width: 20em;
-  background-color: rgb(228, 224, 218);
-  font-size: 12px;
-  border-radius: 10px;
-}
-h1{
-  font-family: 'Rampart One', cursive;
-  font-weight: 1;
-  text-decoration: underline;
-  text-align: center;
-}
-.bt{
-  
-  background-color: #007bff;
+  .main-container{
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    padding: 10px;
+    border: solid 2px rgb(182, 201, 182);
+    width: 20em;
+    background-color: rgb(228, 224, 218);
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  h1{
+    font-family: 'Rampart One', cursive;
+    font-weight: 1;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .bt{
+    
+    background-color: #007bff;
+    border-radius: 5px;
+    width: 14em;
+  }
+  input{
   border-radius: 5px;
-   width: 14em;
-}
-input{
-border-radius: 5px;
-border: solid 0.1px;
-margin-top: 3px;
-}
-input::placeholder {
+  border: solid 0.1px;
+  margin-top: 3px;
+  max-width: 15em;
+  }
+
+  input::placeholder {
     font: 10px sans-serif;
-}
+  }
+    @media all and (max-width: 286px) {
+      
+    input{
+      border-radius: 5px;
+      border: solid 0.1px;
+      margin-top: 3px;
+      width: 14em;
+    }
+    .bt{
+      width: 10em;
+    }
+  }
+  @media all and (max-width: 242px) {
+    
+  }
 </style>
+  

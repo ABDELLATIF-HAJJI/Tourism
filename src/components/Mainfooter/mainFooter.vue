@@ -58,4 +58,20 @@ li:hover{
 img{
     width: 30px;
 }
+ @media all and (max-width: 350px) {
+    .linkes ul{
+        display: flex;
+        justify-content: center;
+    }
+    li{
+        margin-right: 1em;
+        margin-top: 40px;
+    }
+    img{
+        width: 15px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+  }
 </style>

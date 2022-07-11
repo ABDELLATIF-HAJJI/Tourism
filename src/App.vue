@@ -7,7 +7,6 @@
 <script>
 import MainNav from './components/nav_bar/navBar.vue'
 import MainFooter from './components/Mainfooter/mainFooter.vue'
-
 export default {
   name: 'M_nav',
   components: {

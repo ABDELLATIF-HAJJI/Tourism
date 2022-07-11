@@ -5,28 +5,32 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/signUp',
-    name: 'signUp',
+    path: "/",
+    redirect: "/home"
+  },
+  {
+    path: '/sign',
+    name: 'sign',
     component: () => import('../components/Log_in/Sign_up/SignUpPage.vue')
   },
   {
-    path: '/HomeNav',
+    path: '/home',
     name: 'homePage',
     component: () => import('../components/Home/HomePage.vue')
   },
   {
-    path: '/TripsNav',
-    name: 'tripsTour',
+    path: '/trips',
+    name: 'trips',
     component: () => import('../components/Trips/TripsPage.vue')
   },
   {
-    path: '/aboutUs',
+    path: '/about',
     name: 'about',
     component: () => import('../components/About_us/AboutUsPage.vue')
   },
   {
-    path: '/LogInNav',
-    name: 'logIn',
+    path: '/login',
+    name: 'login',
     component: () => import('../components/Log_in/logInPage.vue')
   },
   {
