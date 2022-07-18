@@ -8,12 +8,11 @@
     <router-link to="/Login">Log in</router-link>
     </nav>
     <div class="background">
-      <p class="subTitle">Discover New Places</p>
+      <p class="discoverTitle">Discover New Places</p>
     </div>
   <router-view/>
 </div>
 </template>
-
 <style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -23,15 +22,15 @@
   color: #2c3e50;
 }
 .topContainer{
-  height: 15px;
-background-color: rgb(128, 128, 47);
+  height: 20px;
+  background-color: rgb(128, 128, 47);
 }
 nav {
   background-color: rgb(232, 225, 225);
   text-align: end;
-  height: 35px;
+  height: 50px;
   padding-top: 12px;
-  font-size: 13px;
+  font-size: 17px;
 }
 nav a {
   flex-wrap: wrap;
@@ -58,24 +57,23 @@ nav a:hover{
   background-color:rgb(17, 249, 241);
   max-height: 1em;
 }
-.subTitle{
+.discoverTitle{
+  text-align: center;
   font-family: 'Lobster', cursive;
   padding-left: 18em;
-  margin-top: auto;
-  margin-bottom: 0px;
+  margin: auto;
   height: 18px;
   animation: movementTitle 5s infinite ;
 }
 .background{
+  height: 20px;
   background-color: rgb(128, 128, 47);
-}          
+}
 @keyframes movementTitle{
-  from {
-    transform: translateX(50em);
-  }
-  to {
-    transform: translateX(0);
-  }
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
 }
  @media all and (max-width: 350px) {
   nav {
