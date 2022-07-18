@@ -29,15 +29,16 @@ export default {
 
 <style scoped>
   .main-container{
-    margin: auto;
-    margin-top: 30px;
-    width: 50%;
-    padding: 10px;
-    border: solid 2px rgb(182, 201, 182);
-    width: 20em;
-    background-color: rgb(228, 224, 218);
-    font-size: 12px;
-    border-radius: 10px;
+  margin: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  max-width: 50%;
+  padding: 10px;
+  border: solid 2px rgb(182, 201, 182);
+  width: 60em;
+  background-color: rgb(228, 224, 218);
+  font-size: 20px;
+  border-radius: 10px;
   }
   h1{
     font-family: 'Rampart One', cursive;
@@ -45,36 +46,24 @@ export default {
     text-decoration: underline;
     text-align: center;
   }
-  .bt{
-    
-    background-color: #007bff;
-    border-radius: 5px;
-    width: 14em;
+  input[type=text], [type=password]{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
   }
-  input{
-  border-radius: 5px;
-  border: solid 0.1px;
-  margin-top: 3px;
-  max-width: 15em;
-  }
-
   input::placeholder {
     font: 10px sans-serif;
   }
-    @media all and (max-width: 286px) {
-      
-    input{
-      border-radius: 5px;
-      border: solid 0.1px;
-      margin-top: 3px;
-      width: 14em;
-    }
-    .bt{
-      width: 10em;
-    }
-  }
-  @media all and (max-width: 242px) {
-    
+  .bt{
+  background-color: rgb(5, 78, 115);
+  color: white;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
   }
 </style>
   

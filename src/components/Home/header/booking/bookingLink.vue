@@ -1,5 +1,5 @@
 <template>
-  <div class="formContainer">
+  <div class="mainContainer">
     <form>
       <div class="name">
         <label for="name">YOUR NAME</label><br>
@@ -27,7 +27,7 @@
         <label class="textareaLabel" for="comment">YOUR COMMENT</label><br>
         <textarea name="comment" id="comment" cols="30" rows="3" placeholder="write your comment"></textarea><br>
       </div>
-      <input class="submit" type="submit" value="Submit">
+      <button class="submit" type="submit" value="Submit">submit</button>
     </form>
   </div>
 </template>
@@ -39,11 +39,14 @@ export default {
 </script>
 
 <style scoped>
-.formContainer{
+.mainContainer{
+  height: 31em;
+}
+form{
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 12px;
+  margin-top: 10em;
   max-width: 50em;
   height: 20em;
   border-radius: 20px;
@@ -55,7 +58,7 @@ export default {
 }
 input{
   width: 20em;
-  height: 2em;
+  height: 1.5em;
   background-color: rgba(245, 247, 244, 0.986);
   margin-bottom: 3px;
   border-radius: 5px;
@@ -76,12 +79,13 @@ textarea{
   border-radius: 5px;
   margin: 5px 17px 5px 22em;
   border-radius: 5px;
-  width: 16em;
-  height: 5em;
+  width: 18em;
+  height: 3em;
 }
 .textareaLabel{ 
   margin: 5px 17px 5px 25em;
 }
+
 .submit{
   width: 6em;
   margin: 4px 17px 5px 27em;
@@ -89,5 +93,47 @@ textarea{
 }
 .submit:hover{
   background-color: rgb(70, 137, 208);
+}
+@media all and (max-width:632px) {
+  .textareaLabel{ 
+    margin: 40px 0px 0px 20px;
+  }
+  .name{
+    margin: 0px;
+    max-width: 16em;
+  }
+  textarea{
+  margin: 4px 5px 5px 1em;
+  width: 18em;
+  height: 3em;
+}
+  .submit{
+    width: 5em;
+    margin: 1px 5px 5px 10em;
+  }
+}
+@media all and (max-width:321px) {
+  label{
+    font-size: 10px;
+    margin: 40px 0px 0px 20px;
+  }
+  input{
+  width: 10em;
+  height: 1em;
+  font-size: 14px;
+}
+  .name{
+    margin: 0px;
+    max-width: 10em;
+  }
+  textarea{
+  margin: 4px 5px 5px 1em;
+  width: 10em;
+  height: 3em;
+}
+  .submit{
+    width: 4em;
+    margin: 1px 1px 5px 10em;
+  }
 }
 </style>
