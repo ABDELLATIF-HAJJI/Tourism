@@ -39,6 +39,10 @@ export default {
   background-color: rgb(228, 224, 218);
   font-size: 20px;
   border-radius: 10px;
+  box-shadow: 10px 10px 15px 10px rgb(189, 183, 183);
+  }
+  form{
+    margin: 5px 50px 5px 60px;
   }
   h1{
     font-family: 'Rampart One', cursive;
@@ -64,6 +68,9 @@ export default {
   padding: 5px 20px;
   border: none;
   border-radius: 4px;
+  }
+    form p{
+    margin-bottom: 0px;
   }
 </style>
   
