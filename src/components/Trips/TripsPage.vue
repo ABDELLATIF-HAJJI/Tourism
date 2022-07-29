@@ -210,6 +210,9 @@
         padding: 5px;
         transition: all 500ms;
     }
+    .card:hover {
+        transform: scale(1.1);
+    }
     @media all and (max-width: 1130px) {
         .card{
             width: 14em;
@@ -230,9 +233,6 @@
         .card{
             width: calc(100% / 1);
         }
-    }
-    .card:hover {
-        transform: scale(1.1);
     }
     .Img{
         max-width: 100%;

@@ -25,7 +25,4 @@ export default {
   font-style: normal;
   font-weight: normal;
 }
-body{
-  background-color: rgb(152, 141, 124);
-}
 </style>

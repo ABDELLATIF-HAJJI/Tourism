@@ -38,9 +38,7 @@ const routes = [
     name: 'bookingLink',
     component: () => import('../components/Home/header/booking/bookingLink.vue')
   },
-
 ];
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,

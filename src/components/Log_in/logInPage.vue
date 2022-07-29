@@ -9,7 +9,7 @@
       <input type="checkbox" id="remember" name="remember" value="remember">
       <label for="remember"> Remember me</label><br>
       <button class="bt logIn">Log in</button>
-      <p>you don't have account!</p>
+      <p>You don't have account!</p>
       <router-link :to="{ name: 'sign' }"> <button class="bt signUp">Sign up</button>
       </router-link>
     </form>
@@ -31,6 +31,7 @@
     background-color: rgb(228, 224, 218);
     font-size: 20px;
     border-radius: 10px;
+    box-shadow: 10px 10px 15px 10px rgb(189, 183, 183);
   }
   h1{
     font-family: 'Rampart One', cursive;
@@ -39,7 +40,7 @@
     text-align: center;
   }
   form{
-    margin: auto;
+    margin: 5px 50px 5px 60px;
   }
   input[type=text], [type=password]{
     width: 60%;
@@ -49,6 +50,9 @@
     box-sizing: border-box;
     resize: vertical;
   }
+  input::placeholder {
+    font: 10px sans-serif;
+  }
   .bt{
     background-color: rgb(5, 78, 115);
     color: white;
@@ -56,6 +60,9 @@
     padding: 5px 20px;
     border: none;
     border-radius: 4px;
+  }
+  form p{
+    margin-bottom: 0px;
   }
 </style>
   
