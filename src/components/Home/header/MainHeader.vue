@@ -14,28 +14,28 @@
   </header>
 </template>
 <script scoped>
-import directions from './citiesArray'
-export default {
-  data() {
-    return {
-      whereTo: directions,
-      focus:false,
-      getInput:'',
-      cityDirection:[]
-    }
-  },
-  methods: {
-    searchDirection() {
-      this.cityDirection = this.whereTo.filter(item=>{
-        return item.city.toLowerCase().startsWith(this.getInput.toLowerCase());
-      })
+  import directions from './citiesArray'
+  export default {
+    data() {
+      return {
+        whereTo: directions,
+        focus:false,
+        getInput:'',
+        cityDirection:[]
+      }
     },
-    setCity(filteredCity){
-      this.getInput = filteredCity
-      this.focus = false
-    }
-  },
-}
+    methods: {
+      searchDirection() {
+        this.cityDirection = this.whereTo.filter(item=>{
+          return item.city.toLowerCase().startsWith(this.getInput.toLowerCase());
+        })
+      },
+      setCity(filteredCity){
+        this.getInput = filteredCity
+        this.focus = false
+      }
+    },
+  }
 </script>
 <style scoped>
   Header{
@@ -43,9 +43,9 @@ export default {
     background-image: url('@/assets/img/homePage/headerImg/cover.jpg');
     background-color: rgb(189, 189, 180);
     height: 30em;
-    animation: imageAnimation 35s linear infinite 0s;
+    animation: imagesAnimation 35s linear infinite 0s;
   }
-  @keyframes imageAnimation {
+  @keyframes imagesAnimation {
     0% {
       background-image: url('@/assets/img/homePage/headerImg/cover.jpg');
     }
@@ -82,6 +82,7 @@ export default {
   }
   .inputArea{
     width: 30%;
+    height: 40px;
     padding: 12px;
     border: solid 3px white;
     border-style: double;
@@ -96,7 +97,7 @@ export default {
     background-color: white;
   }
   .searchSymbole{
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 10px;
     background-color: transparent;
   }
@@ -137,10 +138,10 @@ export default {
   }
   .booking{
     margin:0em 1px 20px 20% ;
-    width: 12em;
+    max-width: 12em;
     max-height: 3em;
-    border-radius: 5px;
-    border: none;
+    border-start-start-radius: 50px;
+    border-end-end-radius: 50px;
     font-weight: bold;
     font-size: 15px;
     background: transparent;
