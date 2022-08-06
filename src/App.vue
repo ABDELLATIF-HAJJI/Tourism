@@ -25,4 +25,7 @@ export default {
   font-style: normal;
   font-weight: normal;
 }
+body{
+  margin: 0px;
+}
 </style>

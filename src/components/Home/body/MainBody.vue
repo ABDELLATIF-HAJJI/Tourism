@@ -179,14 +179,14 @@
     font-size: 30px;
     font-weight: bold;
     font-family:"Metal Mania" ;
-     animation: subTitle 3s infinite;
+    animation: subTitle 3s infinite;
   }
   @keyframes subTitle{
   0%   {color: red;}
   25%  {color: yellow; transform: translateX(5);}
   50%  {color: blue;}
   100% {color: green; transform: translateX(1em)}
-}
+  }
   @media all and (max-width: 754px) {
     .subTitles{
       max-width: 10em;
@@ -263,7 +263,7 @@
     text-align: start;
     margin: 10px 30px 0px 15px;
     font-family: 'Arima', cursive;
-    font-size: 1.1em;
+    font-size: 1.09em;
   }
   .recommandationExperience :last-child{
     line-height: 4;
